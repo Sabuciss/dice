@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './Dice.css'
 import dice1 from "./assets/dice/dice-1.svg";
 import dice2 from "./assets/dice/dice-2.svg";
 import dice3 from "./assets/dice/dice-3.svg";
@@ -18,15 +18,16 @@ function Dice() {
     }
   
     return (
-      <>
-        <h2>Metamais kauliņš</h2>
+      <article className="dice">
+        <h2 className="h22">Metamais kauliņš</h2>
         <button onClick={rollDice}>Mest</button>
-        <p>Jūs uzmetāt <strong>{diceValue}</strong></p>
+        <p className="bmw">Jūs uzmetāt <strong>{diceValue}</strong></p>
         <img
-            src={diceImages[diceValue - 1]} // Pievieno -1, jo masīvs sākas ar 0
+            src={diceImages[diceValue - 1]} 
             alt={"Metamais kauliņš " + diceValue}
+            width={150}
         />     
-       </>
+       </article>
     );
   }
   

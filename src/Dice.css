@@ -1,0 +1,16 @@
+.dice {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin: 10px auto; 
+    max-width: 300px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+
+.bmw{
+    color: blue;
+}
+
+.h22{
+    font-family: Courier, monospace;
+}
